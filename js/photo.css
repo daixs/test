@@ -1,0 +1,144 @@
+/*1341218745,169775814*/
+
+.fbPhotoSnowliftOuter{display:table;height:100%;table-layout:fixed;width:100%}
+.fbPhotoSnowliftInner{display:table-cell;text-align:center;vertical-align:middle;width:100%}
+.fbPhotoSnowliftContainer{display:inline-block;margin:20px 0;outline:none;text-align:left}
+.fbPhotoSnowlift .stageWrapper{background-color:#000;height:100%;max-height:2048px;min-height:520px;position:relative;text-align:center;-webkit-user-select:none}
+.fbPhotoSnowlift .stageActions, .fbPhotoSnowlift .snowliftPager, .fbPhotoSnowlift .stageError{line-height:1.12}
+.fbPhotoSnowlift .rhc{background-color:#fff;height:100%;overflow:hidden;position:relative;word-wrap:break-word}
+.fbPhotoSnowlift .stageActions, .fbPhotoSnowlift .stage .stageWrapper img{-webkit-user-select:none;-webkit-user-select:none}
+.fbPhotoSnowlift .stage{position:relative}
+.fbPhotoSnowlift .stageActions{bottom:0;cursor:pointer;height:0;left:0;position:absolute;top:auto;width:100%}
+.fbPhotoSnowlift .snowliftOverlayBar{background-color:rgba(0, 0, 0, .8);-webkit-background-clip:padding-box;bottom:0;color:#b3b3b3;font-size:14px;-webkit-font-smoothing:antialiased;left:0;padding:0;position:absolute;width:100%}
+.fbPhotoSnowlift .snowliftOverlayBar.rightButtons{text-align:left}
+.fbPhotoSnowlift .snowliftOverlay{opacity:0;-webkit-transition:opacity .3s}
+.fbPhotoSnowlift .fbPhotosPhotoButtons{cursor:default;position:relative;-webkit-user-select:none;-webkit-user-select:none}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .tagMessage{color:#bbb;display:none;padding:5px 10px 6px;vertical-align:middle}
+.fbPhotoSnowlift .rightButtons .fbPhotosPhotoButtons .tagMessage{padding:3px 10px}
+.fbPhotoSnowlift .fbPhotosPhotoButtons, .fbPhotoSnowlift.taggingMode .fbPhotosPhotoButtons .tagMessage{display:inline-block}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .tagMessage .doneTaggingLink{margin-left:5px}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .separatorBorder{border-left:rgba(255, 255, 255, .2) 1px solid;display:inline-block;margin-left:5px;height:15px;vertical-align:middle}
+.fbPhotoSnowlift .snowliftOverlayBar a{color:#fff;font-weight:bold}
+.fbPhotoSnowlift.pagingActivated .snowliftOverlay, .fbPhotoSnowlift.taggingMode .snowliftOverlay{opacity:1}
+.fbPhotoSnowlift .mediaTitleInfo{margin:8px 10px 0;text-align:right;white-space:nowrap}
+.fbPhotoSnowlift .rightButtons .mediaTitleInfo{margin-top:3px;overflow:hidden;text-align:left}
+.fbPhotoSnowlift .rightButtons #fbPhotoSnowliftMediaTitle{display:inline;height:2.56em}
+.fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex #fbPhotoSnowliftMediaTitle{-webkit-box-flex:1}
+.fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex #fbPhotoSnowliftPositionAndCount{-webkit-box-flex:0}
+.fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex .mediaTitleInfoSpacer{-webkit-box-flex:1000}
+.fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex, .fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex #fbPhotoSnowliftMediaTitle, .fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex #fbPhotoSnowliftPositionAndCount, .fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex .mediaTitleInfoSpacer{display:-webkit-box}
+.fbPhotoSnowlift.taggingMode .rightButtons .mediaTitleBoxFlex, .fbPhotoSnowlift.taggingMode .rightButtons .fbPhotosPhotoActions, .fbPhotoSnowlift.taggingMode .fbPhotosPhotoButtons .separatorBorder, .fbPhotoSnowlift.taggingMode .mediaTitleInfo{display:none}
+.fbPhotoSnowlift .rightButtons .overlayBarButtons{margin:8px 10px}
+#fbPhotoSnowliftMediaTitle .fbPhotoMediaTitle.hasAlbumLink{line-height:1.28;display:block}
+.fbPhotoSnowlift .mediaTitleInfo #fbPhotoSnowliftMediaTitle, .fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex, .fbPhotoSnowlift .rightButtons .mediaTitleBoxFlex .fbPhotoMediaTitle{overflow:hidden;text-overflow:ellipsis}
+.fbPhotoSnowlift.taggingMode .overlayBarButtons, .fbPhotoSnowlift.taggingMode .fbPhotosPhotoButtons{text-align:center;width:100%}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .buttonLink{display:inline-block;vertical-align:bottom}
+.fbPhotoSnowlift .rightButtons .fbPhotosPhotoButtons .buttonLink{margin-left:6px;margin-right:0;padding:3px 5px}
+.fbPhotoSnowlift .rightButtons .buttonLink{opacity:.7}
+.fbPhotoSnowlift .rightButtons .buttonLink:hover{opacity:1}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .buttonLink span{float:left}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .fbPhotosPhotoLike.viewerLikesThis .uiIconText{padding-left:0 !important}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .fbPhotosPhotoLike.viewerLikesThis i, .fbxPhoto.fbPhotoSnowlift .fbPhotosPhotoButtons .fbPhotosPhotoLike.viewerAlreadyLikedThis{display:none}
+.fbPhotoSnowlift .stage{cursor:pointer;display:block;font-size:0;height:100%;max-height:2048px;min-height:402px;position:relative;text-align:center;width:100%}
+.fbPhotoSnowlift .stage .fbPhotosPhotoTagboxes{border:rgba(255, 255, 255, .1) 1px solid;-webkit-box-sizing:border-box;-webkit-box-sizing:border-box;font-size:12px}
+.fbPhotoSnowlift .videoStage, .fbPhotoSnowlift .ogVideoStage, .imageLoading .stage, .imagePixelsLoading .stage{background:#000 url(http://static.ak.fbcdn.net/rsrc.php/v2/y7/r/pgEFhPxsWZX.gif) no-repeat center center}
+.fbPhotoSnowlift .showVideo .videoStage, .fbPhotoSnowlift .showOGVideo .ogVideoStage{display:block}
+.fbPhotoSnowlift .videoStage, .fbPhotoSnowlift .ogVideoStage, .fbPhotoSnowlift .showVideo .stage{display:none}
+.fbPhotoSnowlift .videoStage, .fbPhotoSnowlift .ogVideoStage{bottom:40px;position:absolute;top:40px;width:100%}
+.fbPhotoSnowlift .videoStage embed, .fbPhotoSnowlift .videoStage object, .fbPhotoSnowlift .ogVideoStage embed, .fbPhotoSnowlift .ogVideoStage object{display:inline-block !important;max-height:100%;max-width:100%;vertical-align:middle}
+.fbPhotoSnowlift .videoStageContainer{height:100%;width:100%}
+.fbPhotoSnowlift .stage img{display:inline-block;height:auto;image-rendering:optimizeQuality;max-height:100%;max-width:100%;vertical-align:middle;width:auto}
+.fbPhotoSnowlift .stageError{left:50%;margin-left:-278px;margin-top:-82px;position:absolute;text-align:left;top:50%}
+.fbPhotoSnowlift .uiButtonOverlay:active{-webkit-box-shadow:0 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(0, 0, 0, .08)}
+.fbPhotoSnowlift .snowliftPager{display:none;height:45px;margin-top:-22px;opacity:0;position:absolute;top:50%;-webkit-transition:opacity .2s;width:27px;z-index:1}
+.fbPhotoSnowlift.pagingReady .snowliftPager{display:block}
+.fbPhotoSnowlift.pagingActivated .snowliftPager{opacity:.4}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager{background:rgba(0, 0, 0, .6) no-repeat;height:200px;margin-top:-100px;opacity:.5;width:60px;z-index:auto}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager:hover, .fbPhotoSnowlift.pagingActivated .snowliftPager.hilightPager{opacity:1}
+.fbPhotoSnowlift .snowliftPager.prev{left:20px}
+.fbPhotoSnowlift .snowliftPager.next{right:20px}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager.prev{border-bottom-right-radius:4px;border-top-right-radius:4px;left:0}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager.next{border-bottom-left-radius:4px;border-top-left-radius:4px;right:0}
+.fbPhotoSnowlift .snowliftPager i{display:block;height:45px;width:27px}
+.fbPhotoSnowlift .snowliftPager.prev i{background-image:url(./../image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-697px -29px}
+.fbPhotoSnowlift .snowliftPager.next i{background-image:url(./../image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-641px -29px}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager i{margin-top:-22px;position:absolute;top:50%}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager.prev i{left:10px}
+.fbPhotoSnowlift .snowliftFixedPagers .snowliftPager.next i{right:10px}
+.fbPhotoSnowlift .fbPhotosPhotoOwnerButtons .uiButton.taggingOn, .fbPhotoSnowlift.taggingMode .fbPhotosPhotoButtons .bottomButtonsBar, .fbPhotoSnowlift.taggingMode .fbPhotosPhotoOwnerButtons .uiButton.taggingOff{display:none}
+.fbPhotoSnowlift.taggingMode .fbPhotosPhotoOwnerButtons .uiButton.taggingOn{display:inline-block}
+.fbPhotoSnowlift .fbPhotosPhotoOwnerButtons{line-height:20px}
+.fbPhotoSnowliftVideoTitle{display:block;font-weight:bold;margin-top:15px}
+.fbPhotoSnowlift a.uiButtonOverlay, .fbPhotoSnowlift a.uiButtonOverlay:hover{background-image:url(./../image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:0 -53px}
+.fbPhotoSnowlift a.uiButtonOverlay:active, .fbPhotoSnowlift a.uiButtonOverlay:focus{background-image:url(./../image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:0 -4px;-webkit-box-shadow:0 0 1px rgba(0, 0, 0, .05), 0 0 2px rgba(0, 0, 0, .1), inset 0 1px 0 rgba(0, 0, 0, .08)}
+.fbPhotoSnowlift a.uiButtonOverlay.uiButtonDisabled{background-image:url(./../imgage/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:0 -53px}
+.fbPhotoSnowlift .inlineEditMode .fbPhotoSnowliftAuthorInfo, .fbPhotoSnowlift .inlineEditMode .fbPhotoPagesTagList, .fbPhotoSnowlift .inlineEditMode .fbPhotoLegacyTagList, .fbPhotoSnowlift .inlineEditMode .fbPhotosPhotoOwnerButtons, .fbPhotoSnowlift .inlineEditMode .fbPhotosOnProfile{display:none}
+#fbPhotoSnowliftAuthorPic{margin-right:10px}
+.fbPhotoSnowlift .uiStreamSecondaryTime{margin-right:5px}
+.fbPhotoSnowlift .fbPhotosImplicitLocLink, .fbPhotoSnowlift .fbPhotosAppLink{color:gray}
+.fbPhotoSnowlift .fbPhotoSnowliftControls{padding:7px 7px 0 15px;text-align:right}
+.fbPhotoSnowlift .fbPhotosPhotoActions{border-top:0;vertical-align:top}
+.fbPhotoSnowlift .rightButtons .fbPhotosPhotoActions{vertical-align:middle}
+.bottomBarActions a.fbPhotoSnowliftDropdownButton, .bottomBarActions a.fbPhotoSnowliftDropdownButton:active, .bottomBarActions a.fbPhotoSnowliftDropdownButton:focus, .bottomBarActions a.fbPhotoSnowliftDropdownButton:hover{background:transparent none;border:1px transparent solid;-webkit-border-radius:2px;-webkit-box-shadow:none;height:16px;padding-right:5px}
+.bottomBarActions a.fbPhotoSnowliftDropdownButton{opacity:.7}
+.bottomBarActions a.fbPhotoSnowliftDropdownButton:hover, .bottomBarActions.openToggler a.fbPhotoSnowliftDropdownButton, .overlayBarButtons a.buttonLink:hover{background-color:rgba(255, 255, 255, .2);border-color:transparent;-webkit-border-radius:2px;opacity:1;text-decoration:none}
+.fbPhotoSnowlift .rightButtons .fbPhotosPhotoActions .tagButton{line-height:22px;margin-right:5px;padding:3px 5px}
+.bottomBarActions .uiButton .uiButtonText{color:#fff;font-size:14px}
+.fbPhotoSnowlift .closeTheater{background-image:url(./../image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-795px -4px;display:inline-block;height:12px;margin-left:5px;vertical-align:top;width:11px}
+#fbPhotoSnowliftOnProfile{padding-top:0}
+.fbPhotoSnowlift .fbPhotoInlineEditor{padding:0 20px 10px}
+.fbPhotoSnowlift .fbPhotoInlineEditor .tagsTokenizer{border-bottom-style:solid;width:auto}
+.fbPhotoSnowlift .fbPhotoInlineEditor .buttons, .fbPhotoSnowlift .fbPhotoInlineEditor .fbPhotoCaptionInput, .fbPhotoSnowlift .fbPhotoInlineEditor .fbPhotoPlaceInput{width:100%}
+.fbPhotoSnowlift .fbPhotoInlineEditor .uiMentionsInput{max-height:100px;overflow-x:hidden;overflow-y:auto}
+.fbPhotoSnowlift .fbPhotoInlineEditor .uiMentionsInput textarea{-webkit-box-sizing:border-box;min-height:50px}
+.fbPhotoSnowlift .fbPhotoInlineEditor .fbPhotoPlaceInput, .fbPhotoSnowliftBackdate{margin:10px 0}
+.fbPhotoSnowlift #inlineEditorSave{margin-bottom:3px}
+.fbPhotoSnowliftEditAudience{display:inline-block;margin-right:10px}
+.fbPhotoSnowlift .rhcBody{position:relative;z-index:1}
+.fbPhotoSnowlift .rhcScroller{width:100% !important}
+.fbPhotoSnowlift.dataLoading .rhcScroller{visibility:hidden}
+.fbPhotoSnowlift .rhcScroller.contentBefore::before{border-top:1px solid rgba(0, 0, 0, .1)}
+.fbPhotoSnowlift .rhcScroller .uiScrollableAreaContent{padding:0 20px 0}
+.fbPhotoSnowlift .fbPhotosSnowliftUfi{width:auto}
+.fbPhotoSnowlift .pinnedUfi .fbPhotosSnowliftUfi .uiUfiAddComment{padding-left:25px;padding-right:20px}
+.fbPhotoSnowlift .pinnedUfi .fbPhotosSnowliftUfi{margin-bottom:-1px}
+.fbPhotoSnowlift .fbPhotosSnowliftUfi .ufiNub{margin-bottom:0}
+.fbPhotoSnowlift .fbPhotosSnowliftUfi .ufiItem{margin-bottom:1px;margin-top:0}
+.fbPhotosSnowliftFeedback{margin-top:8px}
+.fbPhotosSnowliftFeedbackForm{position:relative}
+.fbPhotosSnowboxFeedbackInput{bottom:0;margin:0 20px;left:0;position:absolute;right:0;z-index:1}
+.pinnedUfi .fbPhotosSnowboxFeedbackInput{margin-left:0;margin-right:0}
+.fbPhotosSnowboxFeedbackInput .fbPhotosSnowliftUfi{padding-top:0}
+.pinnedUfi .fbPhotosSnowboxFeedbackInput .fbPhotosSnowliftUfi{padding-top:1px}
+.fbPhotosSnowboxFeedbackInput .fbPhotosSnowliftUfi .ufiItem{border-bottom:0;margin-bottom:0}
+.fbPhotosSnowboxFeedbackInput .fbPhotosSnowliftUfi .uiMentionsInput{max-height:100px;overflow-x:hidden;overflow-y:auto}
+.fbPhotosSnowboxFeedbackInput .fbPhotosSnowliftUfi .uiMentionsInput textarea{-webkit-box-sizing:border-box}
+.fbPhotoSnowlift.fbxPhoto .fbPhotoRemoveFromProfile{border-top:0;border-bottom:0;padding:0}
+#fbPhotoSnowliftAdsSide{bottom:0;position:absolute;width:100%}
+#fbPhotoSnowliftAdsSide.loading, .dataLoading #fbPhotoSnowliftAdsSide{visibility:hidden}
+#fbPhotoSnowliftAdsSide .uiSideHeader{background:none;border-bottom:1px solid #e2e2e2;border-top:none;color:gray;font-weight:normal;padding-left:0}
+#fbPhotoSnowliftAdsSide .uiSideHeader em{color:gray;font-weight:normal}
+.fbPhotoSnowlift .ego_column{width:auto}
+.fbPhotoSnowlift .ego_column > .wrapper > .inner{margin-top:-10px;padding:0 20px 10px}
+.fbPhotoSnowlift .ego_column > .wrapper:first-child > .inner{margin-top:0;padding-top:15px}
+#fbPhotoSnowliftAdsSide .wrapper.hidden{overflow:hidden;position:relative;visibility:hidden}
+#fbPhotoSnowliftAdsSide .wrapper.hidden > .inner{overflow:hidden;position:absolute;width:100%}
+.fbPhotoSnowlift .ego_section, .fbPhotoSnowlift .ego_unit{margin:0}
+.fbPhotoSnowlift .ego_unit{padding-bottom:8px}
+.fbPhotoSnowliftAds .fbPhotoSnowliftAdsSponsored{float:right;text-align:right;width:95%}
+#fbPhotoSnowliftCaption, #fbPhotoSnowliftTagList, #fbPhotoSnowliftCaption .text_exposed_link{font-size:14px;line-height:18px}
+.fbPhotoSnowlift.fbxPhoto .fbPhotoContributorName{font-size:14px;line-height:18px}
+.fbPhotoSnowlift.fbxPhoto .fbPhotoContributorAction{font-weight:normal}
+.fbPhotoSnowlift.fbxPhoto .fbPhotoContributorAction .passiveName{font-weight:bold}
+#fbPhotoUndoSpamReport div{background-color:#ffebe5;margin:1px 0;padding:5px}
+#fbPhotoSnowliftAudienceSelector{display:inline-block;margin-bottom:-4px;margin-left:0;margin-top:-1px;vertical-align:top}
+.fbPhotoSnowlift .fbPhotoRemoveFromProfileLink .img{display:none}
+.fbPhotoSnowliftVideoActions{font-size:12px}
+.fbPhotoSnowlift.collapseRHC .rhc, .fbPhotoSnowlift .fbPhotosPhotoButtons .fbPhotoSnowliftCollapse.buttonLink, .fbPhotoSnowlift .closeTheater.fullscreenCommentClose, .fbPhotoSnowliftFullScreenDisable{display:none}
+.fbPhotoSnowlift .fullScreenSwitch{display:none;right:10px;padding:5px;position:absolute;top:10px;z-index:1}
+.fbPhotoSnowlift .fullScreenSwitch a{height:13px;opacity:0;-webkit-transition:opacity .3s;width:13px}
+.fbPhotoSnowlift .fullScreenSwitch.fullScreenNUX a, .fbPhotoSnowlift.pagingActivated .fullScreenSwitch a, .fbPhotoSnowlift.taggingMode .fullScreenSwitch a{opacity:.5}
+.fbPhotoSnowlift.pagingActivated .fullScreenSwitch a:hover{opacity:1}
+#fbPhotoSnowliftFullScreenClose, .dataLoading .fullScreenSwitch.fbPhotoSnowliftFullScreen, .showVideo .fullScreenSwitch.fbPhotoSnowliftFullScreen{display:none}
+.fbPhotoSnowlift .fbPhotosPhotoButtons .separatorBorder.fbPhotoSnowliftExpand, .fbPhotoMediaTitleFullScreen{display:none}
+.fbPhotoSnowliftFullScreenSeparator, .fbPhotoSnowliftFullScreen{display:none}

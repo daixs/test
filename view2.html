@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Dialog - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	
+	  <style>
+    
+.lfloat{float:left}
+.rfloat{float:right}
+ 
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+.clearfix{zoom:1}
+.fbPhotoSnowliftContainer{display:inline-block;margin:20px 0;outline:none;text-align:left}
+.uiContextualLayerParent{position:relative}
+a{cursor:pointer;color:#3b5998;text-decoration:none}
+ 
+span{
+font-size: 12px;
+}
+
+.statsline{
+height:35px;
+line-height:35px;
+color:#b3b3b3;
+position:absolute;
+text-align:left;
+width:100%;
+bottom:0px;
+left:0px;
+background-color:rgb(50,50,50);
+}
+.xbbh{
+ width: 40%; 
+ margin-left: 18px; 
+ font-weight: bold;
+  color: #fff;
+ }
+ .pagenum{
+ width: 40%; 
+ margin-right:18px;
+ text-align:right; 
+ font-weight: bold;
+ color: #fff;
+ float:right;
+ }
+ 
+ .fbPhotoOuter{display:table;table-layout:fixed;width:100%}
+.fbPhotoInner{display:table-cell;text-align:center;vertical-align:middle;width:100%}
+.fbPhotoSnowlift .rhc{background-color:#fff;height:100%;overflow:hidden;position:relative;word-wrap:break-word}
+.fbPhotoSnowlift .fbPhotoSnowliftControls{padding:7px 7px 0 15px;text-align:right}
+.fbPhotoSnowlift .closeTheater{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-795px -4px;display:inline-block;height:12px;margin-left:5px;vertical-align:top;width:11px}
+.fbPhotoSnowlift .snowliftPager i{display:block;height:45px;width:27px}
+.fbPhotoSnowlift .snowliftPager.prev i{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-697px -29px}
+.fbPhotoSnowlift .snowliftPager.next i{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-641px -29px}
+.fbPhotoSnowlift .snowliftPager{display:none;height:45px;margin-top:-22px;opacity:0;position:absolute;top:50%;-webkit-transition:opacity .2s;width:27px;z-index:1}
+.fbPhotoSnowlift .snowliftPager.prev{left:20px}
+.fbPhotoSnowlift .snowliftPager.next{right:20px} 
+.fbPhotoSnowlift.pagingReady .snowliftPager{display:block}
+         </style>
+</head>
+
+<script>
+	$(document).ready(function() {
+	
+
+	
+		$(".next").click(function(){
+								  
+			   if(  current<imgData.response.docs.length)
+			  current= current+1;
+			 
+				 	 viewdata(current);
+		});
+		$(".prev").click(function(){
+		       $(".spotlight").attr("src","./image/001.jpg");
+			      if(  current>0)
+			     current= current-1;
+				
+				   viewdata(current);
+				  
+		});
+			function  viewdata( current){
+				$("#ddms").html(imgData.response.docs[current].ddms);
+				$("#hpzl").html(imgData.response.docs[current].hpzl);
+				$("#fxmc").html(imgData.response.docs[current].fxmc);
+				$("#clys").html(imgData.response.docs[current].clys);
+				$("#car_length").html(imgData.response.docs[current].car_length);
+				$("#jgsj").html(imgData.response.docs[current].jgsj);
+				$("#hphm").html(imgData.response.docs[current].hphm);
+				$("#kcxs").html(imgData.response.docs[current].kcxs);
+				$("#clsd").html(imgData.response.docs[current].clsd);
+				$("#cszt").html(imgData.response.docs[current].cszt);
+				$("#sbbh").html(imgData.response.docs[current].sbbh);
+				   $(".spotlight").attr("src",imgData.response.docs[current].tplj);
+				
+				
+			}
+			$(".closeTheater").click(function(){
+			 
+          $("#fbPhotoSnowlift").remove();
+      });
+		$(".stageWrapper").mousemove(function(e){
+				 
+	         if($(".prev").offset().left< e.pageX &&  e.pageX<$(".prev").offset().left+$(".prev").width())
+	         {
+//	             $(".prev").addClass("hilightPager");
+//	           $(".next").removeClass("hilightPager");
+       
+	              $(".prev").css({ opacity: 1 });
+	              $(".next").css({ opacity: .4 });
+	         }
+	         
+	           if($(".next").offset().left< e.pageX &&  e.pageX<$(".next").offset().left+$(".next").width())
+	         {
+	         
+	              $(".next").css({ opacity: 1 });
+	              $(".prev").css({ opacity:.4 });
+	         //  $(".prev").removeClass("hilightPager");
+	         }
+		});
+		
+		        current=2;
+		        viewdata( current);
+		$(".statsline").css({ opacity: .6 });
+		   $(".next").css({ opacity: 1 });
+		   	   $(".prev").css({ opacity: .4 });
+		   	      $(".fbPhotoOuter").css({ opacity: .8 });
+		   	   
+			});
+	
+
+</script>
+
+<body>
+	<h2>Basic Dialog</h2>
+	<div class="demo-info">
+		<div class="demo-tip icon-tip"></div>
+		<div>Click below button to open or close dialog.</div>
+	</div>
+	<div style="margin:10px 0;">
+		<a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#dlg').dialog('open')">Open</a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#dlg').dialog('close')">Close</a>
+	</div>
+	<div id="dlg" class="easyui-dialog" title="Basic Dialog" data-options="iconCls:'icon-save'" style="width:1090px;height:600px;padding:10px">
+		  <div id="fbPhotoSnowlift" class="fbPhotoSnowlift fbxPhoto fullScreenAvailable pagingReady pagingActivated"
+        tabindex="0" role="region" aria-label="Facebook照片影院" aria-busy="false" style="position:absolute;top:30px;">
+        <div class="fbPhotoOuter" style="background-color: Black">
+            <div class="fbPhotoInner">
+                <div class="fbPhotoSnowliftContainer uiContextualLayerParent">
+                    <div class="clearfix fbPhotoSnowliftPopup" style="width: 1090px; height: 579px;">
+                        <div class="stageWrapper" style="width: 760px;  float: left; position: relative;">
+                            <div>
+                                <img alt="" class="spotlight" aria-busy="false" src="./image/001.jpg" style="width: 760px;
+                                    height: 579px;">
+                            </div>
+                            <div class="statsline" style="background-color: rgb(50, 50, 50);">
+                                <div class="pagenum">
+                                    <span id="pagenum">15 OF 120000 </span>
+                                </div>
+                                <div class="xbbh">
+                                    <span>设备编号：</span> <span id="sbbh">235435345435 </span>
+                                </div>
+                            </div>
+                            <a class="snowliftPager prev" title="上一页"><i></i></a><a class="snowliftPager next"
+                                title="下一页"><i></i></a>
+                        </div>
+                        <div class="rhc photoUfiContainer" aria-busy="false" style="left: 0px; top: 0px">
+                            <div class="rhcHeader">
+                                <div class="fbPhotoSnowliftControls">
+                                    <a data-hover="tooltip" data-tooltip-position="below" data-tooltip-alignh="right"
+                                        class="closeTheater" href="#"
+                                        id="us1e6l_14"></a>
+                                    <table style="width: 310px; height: 338px; border: 0px; text-align: left">
+                                        <tr>
+                                            <td style="width: 100px; height: 64px">
+                                                <table style="width: 100%; height: 100%; border: 0px;">
+                                                    <tr>
+                                                        <td style="width: 70px">
+                                                            <img src="./image/gqkk.png" />
+                                                        </td>
+                                                        <td>
+                                                            <table border="0" style="width: 100%; height: 100%">
+                                                                <tr>
+                                                                    <td style="width: 100px">
+                                                                        <span style="color: #3B5998; font-size: 12px; font-weight: bold">高清卡口</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width: 100px">
+                                                                        <span id="jgsj">2012-03-09 12:50:25</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="width: 100px">
+                                                                      <div>
+                                <img alt="" class="spotlight" aria-busy="false" src="file:///E:/hard/Attch/20090206/part_20121125210757.jpg" style="width: 760px;
+                                    height: 579px;">
+                            </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100px; border-top: 1px #ccc solid; border-bottom: 1px #ccc solid;">
+                                                <table style="width: 100%; height: 100%; border: 0px;">
+                                                    <tr>
+                                                        <td style="width: 100px">
+                                                            <span style="font-weight: bold;">车辆信息</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 100px">
+                                                            <span>备注：</span> 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 100px">
+                                                      <textarea name="neirong" style=" height:100%;" ></textarea>
+                                                        </td>
+                                                    </tr>
+													       <tr>
+                                                        <td style="width: 100px">
+                                                          <input type="submit" value="保存"/>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.lfloat{float:left}
+.rfloat{float:right}
+ 
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+.clearfix{zoom:1}
+.fbPhotoSnowliftContainer{display:inline-block;margin:20px 0;outline:none;text-align:left}
+.uiContextualLayerParent{position:relative}
+a{cursor:pointer;color:#3b5998;text-decoration:none}
+ 
+span{
+font-size: 12px;
+}
+
+.statsline{
+height:35px;
+line-height:35px;
+color:#b3b3b3;
+position:absolute;
+text-align:left;
+width:100%;
+bottom:0px;
+left:0px;
+background-color:rgb(50,50,50);
+}
+.xbbh{
+ width: 40%; 
+ margin-left: 18px; 
+ font-weight: bold;
+  color: #fff;
+ }
+ .pagenum{
+ width: 40%; 
+ margin-right:18px;
+ text-align:right; 
+ font-weight: bold;
+ color: #fff;
+ float:right;
+ }
+ 
+ .fbPhotoOuter{display:table;table-layout:fixed;width:100%}
+.fbPhotoInner{display:table-cell;text-align:center;vertical-align:middle;width:100%}
+.fbPhotoSnowlift .rhc{background-color:#fff;height:100%;overflow:hidden;position:relative;word-wrap:break-word}
+.fbPhotoSnowlift .fbPhotoSnowliftControls{padding:7px 7px 0 15px;text-align:right}
+.fbPhotoSnowlift .closeTheater{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-795px -4px;display:inline-block;height:12px;margin-left:5px;vertical-align:top;width:11px}
+.fbPhotoSnowlift .snowliftPager i{display:block;height:45px;width:27px}
+.fbPhotoSnowlift .snowliftPager.prev i{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-697px -29px}
+.fbPhotoSnowlift .snowliftPager.next i{background-image:url(./image/KRsFgjsxn3R.png);background-repeat:no-repeat;background-position:-641px -29px}
+.fbPhotoSnowlift .snowliftPager{display:none;height:45px;margin-top:-22px;opacity:0;position:absolute;top:50%;-webkit-transition:opacity .2s;width:27px;z-index:1}
+.fbPhotoSnowlift .snowliftPager.prev{left:20px}
+.fbPhotoSnowlift .snowliftPager.next{right:20px} 
+.fbPhotoSnowlift.pagingReady .snowliftPager{display:block}
